@@ -82,8 +82,8 @@ def imageInput(device, src):
                     im_base64 = Image.fromarray(im)
                     im_base64.save(os.path.join('data/outputs', os.path.basename(image_file)))
                 #--Display predicton
-                    img_ = Image.open(os.path.join('data/outputs', os.path.basename(image_file)))
-                    st.image(img_, caption='Model Prediction(s)')
+                img_ = Image.open(os.path.join('data/outputs', os.path.basename(image_file)))
+                st.image(img_, caption='Model Prediction(s)')
 
 
 
