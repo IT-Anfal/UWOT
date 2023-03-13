@@ -126,11 +126,11 @@ def main():
         deviceoption = st.sidebar.radio("Select compute Device:", ['cpu', 'cuda'], disabled = True, index=0)
     # -- End of Sidebar
     
-    img_logo = Image.open(os.path.join('data/images', os.path.basename("smartathonLogo.png")))
-    st.image(img_logo, caption='')
-    st.header("Theme 1")
-    st.header("Visual Pollution Detection App")
-    st.caption('Developed by: Maseal Alghamdi, Abdullah Alshaya, Abdullah Alzaben, Anfal AlAwajy, Nada AlMugren, Sarah Alghamdi')
+#     img_logo = Image.open(os.path.join('data/images', os.path.basename("smartathonLogo.png")))
+#     st.image(img_logo, caption='')
+    st.header("UWOT")
+    st.header("Underwater objects tracking")
+    st.caption('Team: Maseal Alghamdi, Eman Bin Khunayn, Abdulaziz Alobaid, Amal Alsuwaidan, Anfal AlAwajy, Nada AlMugren, Walaa Alsumari')
 #     st.header('👀 Visual Pollution Detection')
     st.write('👈🏻 Select options left-haned menu bar, then detect')
     
