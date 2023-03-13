@@ -129,8 +129,8 @@ def main():
 #     img_logo = Image.open(os.path.join('data/images', os.path.basename("smartathonLogo.png")))
 #     st.image(img_logo, caption='')
     st.header("UWOT")
-    st.header("Underwater objects tracking")
-    st.caption('Team: Maseal Alghamdi, Eman Bin Khunayn, Abdulaziz Alobaid, Amal Alsuwaidan, Anfal AlAwajy, Nada AlMugren, Walaa Alsumari')
+    st.header("Underwater Objects Tracking")
+
 #     st.header('👀 Visual Pollution Detection')
     st.write('👈🏻 Select options left-haned menu bar, then detect')
     
