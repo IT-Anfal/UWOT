@@ -12,9 +12,9 @@ import time
 ## CFG
 cfg_model_path = "models/yourModel.pt" 
 
-cfg_enable_url_download = True
-if cfg_enable_url_download:
-    url = "https://archive.org/download/yoloXSmart/yoloXSmart.pt" #Configure this if you set cfg_enable_url_download to True
+cfg_enable_url_download = True #set this to true 
+if cfg_enable_url_download:  #Upload model weight and provide url to download it ↓
+    url = "https://archive.org/download/best_20230313/yolov5mclean.pt" #put the model download url
     cfg_model_path = f"models/{url.split('/')[-1:][0]}" #config model path from url name
 ## END OF CFG
 
