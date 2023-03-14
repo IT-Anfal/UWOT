@@ -112,6 +112,10 @@ def videoInput(device, src):
 
 
 def main():
+    st.set_page_config(
+    page_title="UWOT",
+    page_icon="🐳")
+    
     # -- Sidebar
     st.sidebar.title('⚙️Options')
     datasrc = st.sidebar.radio("Select input source:", ['Upload your own data.','From test set.'])
@@ -131,8 +135,9 @@ def main():
 #     st.image(img_logo, caption='')
     st.header("UWOT")
     st.header("Underwater Objects Tracking")
+    st.subheader("Detect object in enhanced image", anchor=None)
 
-#     st.header('👀 Visual Pollution Detection')
+
     st.write('👈🏻 Select options left-haned menu bar, then detect')
     
     if option == "Image":    
