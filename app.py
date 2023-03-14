@@ -83,7 +83,8 @@ def imageInput(device, src):
                     im_base64.save(os.path.join('data/outputs', os.path.basename(image_file)))
                 #--Display predicton
                 img_ = Image.open(os.path.join('data/outputs', os.path.basename(image_file)))
-                st.image(img_, caption='Model Prediction(s)')
+                st.image(img_, caption='Yolo v5 Model M Prediction(s)')
+                #st.image(img_, caption='Model Prediction(s)')
 
 
 
