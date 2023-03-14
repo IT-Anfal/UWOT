@@ -67,7 +67,7 @@ def imageInput(device, src):
         imgpath = glob.glob('data/images/*')
         imgsel = st.slider('Select random images from test set.', min_value=1, max_value=len(imgpath), step=1) 
         image_file = imgpath[imgsel-1]
-        submit = st.button("Detect 🕵🏻!")
+        submit = st.button("Enhance 🎨!")
         col1, col2 = st.columns(2)
         with col1:
             img = Image.open(image_file)
@@ -112,6 +112,11 @@ def videoInput(device, src):
 
 
 def main():
+    st.set_page_config(
+    page_title="UWOT",
+    page_icon="🐳",
+)
+        
     # -- Sidebar
     st.sidebar.title('⚙️Options')
     datasrc = st.sidebar.radio("Select input source:", ['Upload your own data.','From test set.'])
@@ -131,6 +136,7 @@ def main():
 #     st.image(img_logo, caption='')
     st.header("UWOT")
     st.header("Underwater Objects Tracking")
+    st.subheader("Enhance image", anchor=None)
 
 #     st.header('👀 Visual Pollution Detection')
     st.write('👈🏻 Select options left-haned menu bar, then detect')
