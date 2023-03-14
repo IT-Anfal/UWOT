@@ -112,6 +112,12 @@ def videoInput(device, src):
 
 
 def main():
+    
+    st.set_page_config(
+    page_title="Detect underwater object",
+    page_icon="🦈",
+)
+    
     # -- Sidebar
     st.sidebar.title('⚙️Options')
     datasrc = st.sidebar.radio("Select input source:", ['Upload your own data.','From test set.'])
