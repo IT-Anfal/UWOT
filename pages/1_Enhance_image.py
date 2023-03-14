@@ -64,7 +64,7 @@ def imageInput(device, src):
 
     elif src == 'From test set.': 
         # Image selector slider
-        imgpath = glob.glob('data/images/enhanced/*')
+        imgpath = glob.glob('data/images/*')
         imgsel = st.slider('Select random images from test set.', min_value=1, max_value=len(imgpath), step=1) 
         image_file = imgpath[imgsel-1]
         submit = st.button("Detect 🕵🏻!")
