@@ -114,8 +114,8 @@ def videoInput(device, src):
 def main():
     
     st.set_page_config(
-    page_title="Detect underwater object",
-    page_icon="🦈",
+    page_title="UWOT",
+    page_icon="🐳",
 )
     
     # -- Sidebar
