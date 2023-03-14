@@ -135,7 +135,7 @@ def main():
     
 #     img_logo = Image.open(os.path.join('data/images', os.path.basename("smartathonLogo.png")))
 #     st.image(img_logo, caption='')
-    st.header("UWOT")
+    st.title("UWOT")
     st.header("Underwater Objects Tracking")
     st.subheader("Clean image", anchor=None)
 
