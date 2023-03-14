@@ -14,7 +14,7 @@ cfg_model_path = "models/yourModel.pt" # we cannot upload model to github becuse
 
 cfg_enable_url_download = True #set this to true <-- use this option
 if cfg_enable_url_download:  #Upload model weight and provide url to download it ↓
-    url = "https://archive.org/download/best_20230313/yolov5mclean.pt" #put the model download url
+    url = "https://archive.org/download/best_20230313/yolov5mclean.pt" #put enhanced model download url
     cfg_model_path = f"models/{url.split('/')[-1:][0]}" #config model path from url name
 ## END OF CFG
 
