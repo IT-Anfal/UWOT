@@ -137,7 +137,7 @@ def main():
 #     st.image(img_logo, caption='')
     st.title("UWOT")
     st.header("Underwater Objects Tracking")
-    st.subheader("Clean image", anchor=None)
+    st.subheader("Detect object/s in clean image", anchor=None)
 
 
     st.write('👈🏻 Select options left-haned menu bar, then detect')
